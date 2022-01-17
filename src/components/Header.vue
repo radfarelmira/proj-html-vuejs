@@ -4,18 +4,25 @@
       <div class="header-top">
         <div class="container">
             <div class="lang">
-                <select name="" id="">
-                    <option value="english">English</option>
-                    <option value="italian">Italian</option>
-                    <option value="spanish">Spanish</option>
-                </select>
+                <span>English</span>
+                <i class="fas fa-chevron-down"></i>
             </div>
             <nav>
               <div class="menu">
-                  Header top menu
+                  <ul>
+                      <li v-for="(link, index) in headerToplinksArray" :key="index">
+                          <a :href="link.url">{{link.text}}</a>
+                      </li>
+                  </ul>
               </div>
               <div class="icons">
-                  icons
+                 <ul>
+                    <li v-for="(icon, index) in  headerTopIconsArray" :key="index">
+                        <a :href="icon.url" target="_blank">
+                            <i :class="icon.class"></i>
+                        </a>
+                    </li>
+                 </ul>
               </div>
             </nav>
         </div>
@@ -38,6 +45,10 @@
 <script>
 export default {
     name: 'Header',
+    props: {
+        headerToplinksArray: Array,
+        headerTopIconsArray: Array
+    },
 }
 </script>
 
@@ -45,8 +56,6 @@ export default {
 @import '../style/variables.scss';
 
 header{
-    // test
-    background-color: antiquewhite;
 
     .header-top{
         border-bottom: 1px solid lightgray;
@@ -56,18 +65,44 @@ header{
         .container{
             display: flex;
             justify-content: space-between;
-            text-align: center;
+            align-items: center;
+
+            .lang{
+
+                i{
+                    margin-left: 5px;
+                }
+            }
 
             nav {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
 
-                .lang{
+                .menu{
 
-                    select {
-                    border: 0px;
+                    ul{
+
+                        li{
+                            margin: 0 20px;
+
+                            a{
+                                text-transform: capitalize;
+                            }
+                        }
                     }
                 }
+
+                .icons{
+
+                    ul{
+
+                        li{
+                            margin: 0 5px;
+                        }
+                    }
+                }
+
             }
         }
     }
