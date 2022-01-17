@@ -30,7 +30,20 @@
       <!-- Header Middel -->
       <div class="header-middel">
         <div class="container">
-            Header middel
+            <div class="logo">
+                <img src="../assets/img/MasterStudy.svg" alt="Master Study Logo">
+            </div>
+            <div class="input-group mb-3">
+                <label for="category">category</label>
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+            </div>
+            <div class="membership">
+                membership
+            </div>
+            <div class="log-in">
+                log in
+            </div>
         </div>
       </div>
       <!-- Header Bottom -->
@@ -108,8 +121,34 @@ header{
     }
 
     .header-middel{
-        // test
-        background-color: honeydew;
+        padding: 20px 0;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .input-group{
+
+                width: 600px;
+
+                label{
+                    margin-right: 10px;
+                    text-transform: uppercase;
+                }
+
+                input{
+                    background-color: #f0f2f5;
+                    border-color: #f0f2f5;
+                    box-shadow: none;
+                }
+
+                button{
+                    background-color: #457992;
+                    border-color: #457992;
+                    color:white;
+                }
+            }
+        }
     }
 
     .header-bottom{
