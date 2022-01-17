@@ -33,16 +33,44 @@
             <div class="logo">
                 <img src="../assets/img/MasterStudy.svg" alt="Master Study Logo">
             </div>
-            <div class="input-group mb-3">
-                <label for="category">category</label>
-                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+            <div class="input">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                    category
+                </a>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
             </div>
-            <div class="membership">
-                membership
+            
+            <div class="colaboration">
+                <a href="#">
+                    <i class="fas fa-briefcase"></i>
+                    Become an instructor
+                </a>
+
+                <a href="#">
+                    <i class="fas fa-briefcase"></i>
+                    For Enterprise
+                </a>
             </div>
             <div class="log-in">
-                log in
+                <a href="#">
+                    <i class="far fa-user"></i>
+                    Log in
+                </a>
+
+                <a class="btn-general" href="#">
+                    sign up
+                </a>
+
+                <a class="bookmark" href="#">
+                    <i class="far fa-bookmark"></i>
+                </a>
             </div>
         </div>
       </div>
@@ -69,7 +97,7 @@ export default {
 @import '../style/variables.scss';
 
 header{
-
+    font-size: 14px;
     .header-top{
         border-bottom: 1px solid lightgray;
         padding: 15px 0;
@@ -121,31 +149,50 @@ header{
     }
 
     .header-middel{
+        color: gray;
         padding: 20px 0;
         .container{
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            .input-group{
-
-                width: 600px;
-
-                label{
+            .input{
+                display: flex;
+                align-items: center;
+                a{
                     margin-right: 10px;
                     text-transform: uppercase;
                 }
 
-                input{
-                    background-color: #f0f2f5;
-                    border-color: #f0f2f5;
-                    box-shadow: none;
+                .input-group{
+                    width: 400px;
+                    input{
+                        background-color: #f0f2f5;
+                        border-color: #f0f2f5;
+                    }
+
+                    button{
+                        background-color: #457992;
+                        border-color: #457992;
+                        color:white;
+                    }
+                }
+            }
+
+            .colaboration{
+
+                a{
+                    margin-right: 10px;
+                }
+            }
+
+            .log-in{
+                a{
+                    margin-right: 10px;  
                 }
 
-                button{
-                    background-color: #457992;
-                    border-color: #457992;
-                    color:white;
+                .bookmark{
+                    font-size: 20px;
                 }
             }
         }
