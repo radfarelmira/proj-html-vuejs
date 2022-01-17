@@ -49,7 +49,7 @@
             
             <div class="colaboration">
                 <a href="#">
-                    <i class="fas fa-briefcase"></i>
+                    <i class="fas fa-bullhorn"></i>
                     Become an instructor
                 </a>
 
@@ -77,7 +77,14 @@
       <!-- Header Bottom -->
       <div class="header-bottom">
         <div class="container">
-            Header bottom
+            <ul>
+                <li v-for="(link, index) in headerBottomLinksArray" :key="index">
+                    <a :href="link.url">
+                        <i :class="link.class"></i>
+                        {{link.text}}
+                    </a>
+                </li>
+            </ul>
         </div>
       </div>
   </header>
@@ -88,7 +95,8 @@ export default {
     name: 'Header',
     props: {
         headerToplinksArray: Array,
-        headerTopIconsArray: Array
+        headerTopIconsArray: Array,
+        headerBottomLinksArray: Array
     },
 }
 </script>
@@ -159,8 +167,9 @@ header{
             .input{
                 display: flex;
                 align-items: center;
+
                 a{
-                    margin-right: 10px;
+                    margin-right: 15px;
                     text-transform: uppercase;
                 }
 
@@ -200,7 +209,22 @@ header{
 
     .header-bottom{
         background-color: $secondary_color;
-        color: #ffffff
+        color: #ffffff;
+        padding: 20px 0;
+
+        ul{
+            display: flex;
+            justify-content: center;
+
+            li{
+                margin-right: 25px;
+                text-transform: capitalize;
+
+                i{
+                    margin-right: 5px;
+                }
+            }
+        }
     }
 }
 </style>

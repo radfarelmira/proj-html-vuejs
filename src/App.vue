@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header :headerToplinksArray="headerTopLinks" :headerTopIconsArray="headerTopIcons"/>
+    <Header :headerToplinksArray="headerTopLinks" :headerTopIconsArray="headerTopIcons" :headerBottomLinksArray="headerBottomLinks"/>
 
     <main>
       Main
@@ -68,6 +68,33 @@ export default {
         {
           class: 'fab fa-youtube',
           url: 'https://youtube.com/'
+        },
+      ],
+      headerBottomLinks: [
+        {
+          text: 'business',
+          class: 'fas fa-chart-bar',
+          url: '#'
+        },
+        {
+          text: 'design',
+          class: 'fas fa-palette',
+          url: '#'
+        },
+        {
+          text: 'development',
+          class: 'fas fa-cog',
+          url: '#'
+        },
+        {
+          text: 'lifestyle',
+          class: 'far fa-smile',
+          url: '#'
+        },
+        {
+          text: 'office productivity',
+          class: 'fas fa-chart-line',
+          url: '#'
         },
       ]
     }
