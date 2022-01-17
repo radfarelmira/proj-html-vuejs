@@ -5,8 +5,8 @@
         </div>
         <div class="sm-container">
             <div class="banner-content">
-                <h2>banner</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut eum deserunt unde dolore distinctio dolores odio id debitis, corrupti architecto repellendus facilis molestias. Quo, dolore id labore saepe aspernatur inventore?</p>
+                <h2>Udemy Affiliaten Sales</h2>
+                <p>Monetize your audience and attract new customers with Udemy!</p>
             </div>
         </div>
       </div>
@@ -47,10 +47,20 @@ section{
             left:650px;
         }
         
-        .banner-content{
+
+        .sm-container{
             z-index: 1;
+
+            .banner-content{
             width: 50%;
+            z-index: 1;
+
+            h2{
+                font-size: 40px;
+                font-weight: bold;
+            }
         }
+        } 
     }
 }
 
