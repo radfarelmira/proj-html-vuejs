@@ -3,7 +3,7 @@
     <Header :headerToplinksArray="headerTopLinks" :headerTopIconsArray="headerTopIcons" :headerBottomLinksArray="headerBottomLinks"/>
 
     <main>
-      Main
+      <Banner />
     </main>
 
     <Footer />
@@ -13,12 +13,14 @@
 <script>
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
+import Banner from "./components/Banner.vue";
 
 export default {
   name: "App",
   components: {
     Header,
-    Footer
+    Footer,
+    Banner
   },
   data: function() {
     return {
