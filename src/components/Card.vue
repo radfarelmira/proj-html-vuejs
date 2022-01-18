@@ -3,7 +3,7 @@
         <div class="card">
             <img :src="detailes.src" class="card-img-top" alt="...">
             <div class="card-body">
-                <div class="title">Development ></div>
+                <div class="title">{{detailes.title}}</div>
                 <p class="card-text">{{detailes.text}}</p>
                 <div class="parches-info">
                     <div>
@@ -50,7 +50,7 @@ export default {
 .col{
     
     .card{
-        
+        text-align: left;
         .card-body{
 
             .title{
@@ -66,6 +66,7 @@ export default {
             }
 
             .parches-info{
+                min-height: 35px;
                 font-size: 12px;
                 display: flex;
                 justify-content: space-between;
@@ -80,7 +81,7 @@ export default {
                 }
 
                 .price{
-
+                    text-align: right;
                     .ex-price{
                         text-decoration: line-through;
                         color: lightgray;

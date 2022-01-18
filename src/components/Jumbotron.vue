@@ -17,7 +17,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../style/variables.scss';
 
 section{
     padding: 75px 0;
