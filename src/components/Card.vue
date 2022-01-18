@@ -7,14 +7,13 @@
                 <p class="card-text">{{detailes.text}}</p>
                 <div class="parches-info">
                     <div>
-                        <i v-for="n in starRating" :key="n" id="yellow" class="fas fa-star"></i>
-
-                        <i id="gray" class="fas fa-star"></i>
+                        <i v-for="n in starRating" :key="n" id="raiting-star" class="fas fa-star"></i> 
+                        <i v-for="n in (maxStarRating - starRating)" :key="n" id="fas-star" class="fas fa-star"></i>
                     </div>
 
                     <div class="price">
-                        <div class="ex-price">$199.99</div>
-                        <div class="discount">$50</div>
+                        <div class="ex-price">{{detailes.exPrice}}</div>
+                        <div class="discount">{{detailes.discount}}</div>
                     </div>
                 </div>
             </div>
@@ -30,8 +29,17 @@ export default {
     },
     data: function(){
         return{
-            starRating: 4,
+            maxStarRating: 5,
+            starRating: 0
         }; 
+    },
+    methods: {
+        getRaiting: function(){
+            return this.starRating = parseInt(this.detailes.raiting)    
+        }
+    },
+    created: function(){
+        this.getRaiting()
     }
 
 }
@@ -40,9 +48,9 @@ export default {
 <style scoped lang="scss">
 
 .col{
-
+    
     .card{
-
+        
         .card-body{
 
             .title{
@@ -51,6 +59,7 @@ export default {
             }
 
             p{
+                min-height: 120px;
                 font-size: 16px;
                 border-bottom: 1px solid lightgray;
                 padding: 10px 0;
@@ -62,12 +71,12 @@ export default {
                 justify-content: space-between;
                 align-items: center;
 
-                #yellow{
-                    color: #f59d1a;
+                #fas-star{
+                    color: lightgray;    
                 }
 
-                #gray{
-                    color: lightgray;
+                #raiting-star{
+                    color: #f59d1a;
                 }
 
                 .price{
