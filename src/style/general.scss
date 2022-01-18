@@ -41,8 +41,12 @@ img{
     margin: auto;
 }
 
-.active{
+.active-link{
     padding: 10px 20px;
     background-color: #f0f4fa;
     border-radius: 20px;
+}
+
+.active-cours{
+    transform: scale(1.2)
 }

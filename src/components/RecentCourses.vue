@@ -5,7 +5,7 @@
            <nav>
                <ul>
                    <li  v-for="(cours, index) in recentCoursesLinksArray" :key="index" >
-                       <a @click="getActivelink(index)" :class="{'active' : index === activeLink}" href="#"  target="_blank">
+                       <a @click="getActivelink(index)" :class="{'active-link' : index === activeLink}" href="#"  target="_blank">
                            {{cours}}
                         </a>
                    </li>

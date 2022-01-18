@@ -5,15 +5,15 @@
             <p>Discover our most popular courses for self learning</p>
 
             <div class="row row-cols-1 row-cols-md-6 g-4">
-                <Card v-for="(cours, index) in recentCoursesArray" :key="index" :detailes="cours"/>
+                <Card v-for="(cours, index) in popularCourses" :key="index" :detailes="cours" :class="currentActiveCourse === index? 'active-cours': 0 "/>
             </div>
 
 
             <div class="arrow-buttons">
-                <span class="next-arrow">
+                <span @click="showNextCours" class="next-arrow">
                     <i class="fas fa-angle-left"></i>
                 </span>
-                <span class="prev-arrow">
+                <span @click="showPrevCours" class="prev-arrow">
                     <i class="fas fa-angle-right"></i>
                 </span>
             </div>
@@ -22,10 +22,45 @@
 </template>
 
 <script>
+import Card from "./Card.vue";
+
 export default {
     name: 'PopularCourses',
+    components:{
+        Card,
+    },
     props: {
-        popularCoursesArray: Array,
+        allCoursesArray: Array,
+    },
+    data: function(){
+        return{
+            popularCourses: [],
+            currentActiveCourse: 0,
+        };
+    },
+    methods: {
+        getPopularCourses: function (){
+            this.popularCourses= [...this.allCoursesArray]
+
+            this.popularCourses.splice(6)
+        },
+        showNextCours: function (){
+            if( this.currentActiveCourse < this.popularCourses.length - 1){
+                this.currentActiveCourse++;
+            } else {
+                this.currentActiveCourse = 0;
+            }
+        },
+        showPrevCours: function (){
+            if(this.currentActiveCourse > 0){
+                this.currentActiveCourse--;
+            } else{
+                this.currentActiveCourse = this.popularCourses.length - 1;
+            }
+        }
+    },
+    created: function(){
+        this.getPopularCourses()
     }
 }
 </script>
@@ -47,9 +82,11 @@ section{
             color: gray;
         }
 
+        .row{
+            margin: 20px 0 50px 0;
+        }
 
         .arrow-buttons{
-            margin-top: 50px;
 
             .next-arrow,
             .prev-arrow

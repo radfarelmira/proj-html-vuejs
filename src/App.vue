@@ -13,7 +13,7 @@
 
       <Subscribe />
 
-      <PopularCourses :popularCoursesArray="recentCourses"/>
+      <PopularCourses :allCoursesArray="recentCourses"/>
     </main>
 
     <Footer />

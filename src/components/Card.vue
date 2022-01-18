@@ -51,6 +51,7 @@ export default {
     
     .card{
         text-align: left;
+        transition: transform .2s;
         .card-body{
 
             .title{
