@@ -10,6 +10,10 @@
       <Jumbotron />
 
       <RecentCourses :recentCoursesLinksArray="recentCoursesLinks" :recentCoursesArray="recentCourses"/>
+
+      <Subscribe />
+
+      <PopularCourses :popularCoursesArray="recentCourses"/>
     </main>
 
     <Footer />
@@ -23,6 +27,8 @@ import Banner from "./components/Banner.vue";
 import DevelopmentCourses from "./components/DevelopmentCourses.vue";
 import Jumbotron from "./components/Jumbotron.vue";
 import RecentCourses from "./components/RecentCourses.vue";
+import Subscribe from "./components/Subscribe.vue";
+import PopularCourses from "./components/PopularCourses.vue";
 
 export default {
   name: "App",
@@ -32,7 +38,9 @@ export default {
     Banner,
     DevelopmentCourses,
     Jumbotron,
-    RecentCourses
+    RecentCourses,
+    Subscribe,
+    PopularCourses
   },
   data: function() {
     return {

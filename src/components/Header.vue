@@ -40,7 +40,7 @@
                 </a>
 
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <input type="text" class="form-control" placeholder="Search courses" aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button class="btn btn-outline-secondary" type="button" id="button-addon2">
                         <i class="fas fa-search"></i>
                     </button>
@@ -184,6 +184,11 @@ header{
                         background-color: #457992;
                         border-color: #457992;
                         color:white;
+                    }
+                    
+                    ::placeholder{
+                        font-size: 14px;
+                        color: lightgray;
                     }
                 }
             }
