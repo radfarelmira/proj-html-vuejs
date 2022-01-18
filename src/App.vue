@@ -6,6 +6,8 @@
       <Banner />
 
       <DevelopmentCourses :developmentCoursesArray="developmentCuorses"/>
+
+      <Jumbotron />
     </main>
 
     <Footer />
@@ -17,6 +19,7 @@ import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import Banner from "./components/Banner.vue";
 import DevelopmentCourses from "./components/DevelopmentCourses.vue";
+import Jumbotron from "./components/Jumbotron.vue";
 
 export default {
   name: "App",
@@ -24,7 +27,8 @@ export default {
     Header,
     Footer,
     Banner,
-    DevelopmentCourses
+    DevelopmentCourses,
+    Jumbotron
   },
   data: function() {
     return {
