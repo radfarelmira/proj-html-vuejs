@@ -1,15 +1,14 @@
 <template>
   <section>
-      <div class="row">
-        <div class="parallelogram">
-        </div>
-        <div class="sm-container">
+      <div class="sm-container">
             <div class="banner-content">
                 <h2>Udemy Affiliaten Sales</h2>
                 <p>Monetize your audience and attract new customers with Udemy!</p>
             </div>
+            <div class="triangle">
+            </div>
         </div>
-      </div>
+        
   </section>
 </template>
 
@@ -24,44 +23,40 @@ export default {
 
 section{
     margin-top: 20px;
-    background-color:$primary_color ;
     color: white;
+    height: 300px;
+    background-color: $primary_color;
+    background-image: url(../assets/img/slide-1.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding: 100px 0;
+    position: relative;
 
-    .row{
-        height: 300px;
-        background-color: $primary_color;
-        background-image: url(../assets/img/slide-1.jpg);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
-        position: relative;
-        
+    .sm-container{
 
-        .parallelogram{
-            width: 150px;
-            height: 300px;
-            transform: skew(20deg);
-            background: $primary_color;
-            position: absolute;
-            top: 0;
-            left:650px;
-        }
-        
-
-        .sm-container{
-            z-index: 1;
-
-            .banner-content{
+        .banner-content{
             width: 50%;
-            z-index: 1;
+            background-color: $primary_color;
 
             h2{
                 font-size: 40px;
                 font-weight: bold;
             }
         }
-        } 
+
+        .triangle{
+            width: 0;
+            height: 0;
+            border-bottom: 300px solid $primary_color;
+            border-right: 150px solid transparent;
+            position: absolute;
+            left: 684.5px;
+            bottom: 0;
+        }
     }
+
+    
 }
 
 </style>
