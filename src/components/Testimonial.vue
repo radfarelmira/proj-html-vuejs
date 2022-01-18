@@ -12,7 +12,11 @@
             <div class="job-position">
                 Product Manager, Apple Inc
             </div>
+
+            <div id="triangle-right">
+            </div>
         </div>
+        
     </section>
 </template>
 
@@ -35,6 +39,7 @@ section{
         margin-left: 300px;
         background-color: white;
         padding: 50px;
+        position: relative;
 
         h4{
             font-weight: bold;
@@ -54,6 +59,18 @@ section{
             color: gray;
         }
     }
+
+    .testimonial-content:after {
+        content: " ";
+        position: absolute;
+        right: -15px;
+        top: 180px;
+        border-top: 15px solid transparent;
+        border-right: none;
+        border-left: 20px solid white;
+        border-bottom: 15px solid transparent;
+    }
+
 }
 
 </style>
