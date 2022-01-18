@@ -14,6 +14,8 @@
       <Subscribe />
 
       <PopularCourses :allCoursesArray="recentCourses"/>
+
+      <Activities />
     </main>
 
     <Footer />
@@ -29,6 +31,7 @@ import Jumbotron from "./components/Jumbotron.vue";
 import RecentCourses from "./components/RecentCourses.vue";
 import Subscribe from "./components/Subscribe.vue";
 import PopularCourses from "./components/PopularCourses.vue";
+import Activities from "./components/Activities.vue";
 
 export default {
   name: "App",
@@ -40,7 +43,8 @@ export default {
     Jumbotron,
     RecentCourses,
     Subscribe,
-    PopularCourses
+    PopularCourses,
+    Activities
   },
   data: function() {
     return {
