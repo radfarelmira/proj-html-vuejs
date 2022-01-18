@@ -16,6 +16,8 @@
       <PopularCourses :allCoursesArray="recentCourses"/>
 
       <Activities />
+
+      <Testimonial />
     </main>
 
     <Footer />
@@ -32,6 +34,7 @@ import RecentCourses from "./components/RecentCourses.vue";
 import Subscribe from "./components/Subscribe.vue";
 import PopularCourses from "./components/PopularCourses.vue";
 import Activities from "./components/Activities.vue";
+import Testimonial from "./components/Testimonial.vue";
 
 export default {
   name: "App",
@@ -44,7 +47,8 @@ export default {
     RecentCourses,
     Subscribe,
     PopularCourses,
-    Activities
+    Activities,
+    Testimonial
   },
   data: function() {
     return {
