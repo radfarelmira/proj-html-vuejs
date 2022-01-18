@@ -129,6 +129,7 @@ export default {
       ],
       developmentCuorses: [
         {
+          title: 'Development >',
           src: require('./assets/img/13.jpg'),
           text: 'The Complete IOS 10 &amp; Swift 3 Developer Courses',
           raiting: 4,
@@ -136,6 +137,7 @@ export default {
           discount: '$100'
         },
         {
+          title: 'Development >',
           src: require('./assets/img/3.jpg'),
           text: 'Web Design for Beginners: Real World Coding in HTML &amp; CSS',
           raiting: 5,
@@ -143,6 +145,7 @@ export default {
           discount: '$65'
         },
         {
+          title: 'Development >',
           src: require('./assets/img/9.jpg'),
           text: 'GitHub Ultimate: Master Git and GitHub - Beginner to Expert ',
           raiting: 4,
@@ -150,6 +153,7 @@ export default {
           discount: '$50'
         },
         {
+          title: 'Development >',
           src: require('./assets/img/25.jpg'),
           text: 'The Complete IOS 11 &amp; Swift Developer Courses - Build 20 Apps',
           raiting: 4,
@@ -157,6 +161,7 @@ export default {
           discount: '$100'
         },
         {
+          title: 'Development >',
           src: require('./assets/img/15.jpg'),
           text: 'Android Java Masterclass - Become an App Developer',
           raiting: 4,
@@ -164,6 +169,7 @@ export default {
           discount: '$50'
         },
         {
+          title: 'Development >',
           src: require('./assets/img/19.jpg'),
           text: 'Xamarin Forms: Build Native Cross-platform Apps with C#',
           raiting: 4,
