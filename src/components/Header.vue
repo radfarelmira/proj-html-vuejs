@@ -148,6 +148,11 @@ header{
 
                         li{
                             margin: 0 5px;
+                            transition: transform .1s; 
+                        }
+
+                        li:hover{
+                            transform: scale(1.2)
                         }
                     }
                 }

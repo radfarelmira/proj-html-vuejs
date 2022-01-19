@@ -17,7 +17,13 @@
             </div>
             <div class="col social">
               <h5>social network</h5>
-              col 3
+              <ul>
+                <li v-for="(icon, index) in footerTopIconsArray" :key="index">
+                  <a :href="icon.href" :style="{'background-color': icon.bgColor}" target="_blank">
+                    <i :class="icon.class"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="col udemy">
               <img src="../assets/img/top-udemy.jpg" alt="udemy">
@@ -38,6 +44,9 @@
 <script>
 export default {
     name: 'Footer',
+    props:{
+      footerTopIconsArray: Array,
+    }
 }
 </script>
 
@@ -70,6 +79,34 @@ footer{
         color: gray;
       }
     }
+
+    .social{
+      font-size: 18px;
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+
+        li{
+          margin: 0 10px 10px 0;
+          transition: transform .1s;  
+
+          a{
+            padding: 10px 15px;
+            background-color: #d4ebb3;
+            border-radius: 50px;
+          }
+        }
+
+        li:hover{
+          transform: scale(1.1)
+        }
+      }
+    }
+
+    .udemy{
+    }
+
+    
   }
 
   .footer-bottom{

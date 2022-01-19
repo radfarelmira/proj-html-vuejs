@@ -20,7 +20,7 @@
       <Testimonial />
     </main>
 
-    <Footer />
+    <Footer :footerTopIconsArray="footerTopIcons"/>
   </div>
 </template>
 
@@ -275,6 +275,48 @@ export default {
           discount: '$35'
         },
       ],
+      footerTopIcons: [
+        {
+          class: 'fab fa-facebook',
+          bgColor: '#3b5998',
+          href: 'https://it-it.facebook.com/'
+        },
+        {
+          class: 'fab fa-instagram',
+          bgColor: '#c32aa3',
+          href: 'https://www.instagram.com/'
+        },
+        {
+          class: 'fab fa-linkedin',
+          bgColor: '#0077b5',
+          href: 'https://www.linkedin.com/'
+        },
+        {
+          class: 'fab fa-pinterest',
+          bgColor: '#bd081c',
+          href: 'https://www.pinterest.com/'
+        },
+        {
+          class: 'fab fa-twitter',
+          bgColor: '#1da1f2',
+          href: 'https://twitter.com/'
+        },
+        {
+          class: 'fab fa-dribbble',
+          bgColor: '#ea4c89',
+          href: 'https://dribbble.com/'
+        },
+        {
+          class: 'fab fa-google-plus',
+          bgColor: '#db4437',
+          href: 'https://www.google.com/'
+        },
+        {
+          class: 'fab fa-skype',
+          bgColor: '#00aff0',
+          href: 'https://www.skype.com/en/'
+        },
+      ]
     }
   }
 };
