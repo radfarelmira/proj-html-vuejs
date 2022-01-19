@@ -17,34 +17,13 @@
             </div>
 
             <a class="btn-general" href="#">show all</a>
-
+            <!-- Side bar Icons -->
             <div class="side-bar-icons">
                 <ul>
-                    <li>
+                    <li v-for="(icon, index) in recentCoursesIconsArray" :key="index">
                         <a href="#">
-                            <i class="fas fa-tv"></i>
+                            <i :class="icon"></i>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-centos"></i>
-                        </a>
-                        
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-wrench"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>  
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-mobile-alt"></i>
-                        </a> 
                     </li>
                 </ul>
             </div>
@@ -63,6 +42,7 @@ export default {
     props: {
         recentCoursesLinksArray: Array,
         recentCoursesArray: Array,
+        recentCoursesIconsArray: Array
     },
     data: function (){
         return{
@@ -116,6 +96,7 @@ section{
             position: absolute;
             right: 0;
             bottom: 70px;
+
             ul{
                 display: flex;
                 flex-direction: column;

@@ -9,7 +9,7 @@
 
       <Jumbotron />
 
-      <RecentCourses :recentCoursesLinksArray="recentCoursesLinks" :recentCoursesArray="recentCourses"/>
+      <RecentCourses :recentCoursesLinksArray="recentCoursesLinks" :recentCoursesArray="recentCourses" :recentCoursesIconsArray="recentCoursesIcons"/>
 
       <Subscribe />
 
@@ -275,6 +275,7 @@ export default {
           discount: '$35'
         },
       ],
+      recentCoursesIcons:['fas fa-tv', 'fab fa-centos', 'fas fa-wrench', 'fas fa-shopping-cart', 'fas fa-mobile-alt'],
       footerTopIcons: [
         {
           class: 'fab fa-facebook',

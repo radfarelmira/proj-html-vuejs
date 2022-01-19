@@ -52,6 +52,7 @@ export default {
     .card{
         text-align: left;
         transition: transform .2s;
+
         .card-body{
 
             .title{
@@ -83,6 +84,7 @@ export default {
 
                 .price{
                     text-align: right;
+                    
                     .ex-price{
                         text-decoration: line-through;
                         color: lightgray;
