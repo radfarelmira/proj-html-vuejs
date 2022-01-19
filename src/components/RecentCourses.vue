@@ -94,7 +94,7 @@ section{
         nav{
 
             ul{
-                margin-top: 40px;
+                margin-top: 30px;
 
                 li{
                     margin-right: 20px;
@@ -105,7 +105,7 @@ section{
         }
 
         .row{
-        margin: 50px 0;
+        margin: 30px 0 50px 0;
         }
 
         .side-bar-icons{

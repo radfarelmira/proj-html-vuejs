@@ -26,7 +26,6 @@
 
 <script>
 import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
 import Banner from "./components/Banner.vue";
 import DevelopmentCourses from "./components/DevelopmentCourses.vue";
 import Jumbotron from "./components/Jumbotron.vue";
@@ -35,12 +34,12 @@ import Subscribe from "./components/Subscribe.vue";
 import PopularCourses from "./components/PopularCourses.vue";
 import Activities from "./components/Activities.vue";
 import Testimonial from "./components/Testimonial.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     Header,
-    Footer,
     Banner,
     DevelopmentCourses,
     Jumbotron,
@@ -48,7 +47,8 @@ export default {
     Subscribe,
     PopularCourses,
     Activities,
-    Testimonial
+    Testimonial,
+    Footer
   },
   data: function() {
     return {

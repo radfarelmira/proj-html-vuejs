@@ -11,7 +11,7 @@
                     <div class="input-group">
                     <input type="text" class="form-control" placeholder="Enter your E-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                        Sunscribe
+                        Subscribe
                     </button>
 
                 </div>

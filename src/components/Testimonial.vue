@@ -31,7 +31,7 @@ export default {
 section{
     padding: 50px 0;
     background-image: url(../assets/img/testimonial.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 
     .testimonial-content{
@@ -40,6 +40,7 @@ section{
         background-color: white;
         padding: 50px;
         position: relative;
+        border-radius: 20px;
 
         h4{
             font-weight: bold;
