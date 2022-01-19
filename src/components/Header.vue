@@ -4,8 +4,11 @@
       <div class="header-top">
         <div class="container">
             <div class="lang">
-                <span>English</span>
-                <i class="fas fa-chevron-down"></i>
+                <select name="" id="xyz">
+                    <option value="en">English</option>
+                    <option value="it">Italiano</option>
+                    <option value="es">Spanol</option>
+                </select>
             </div>
             <nav>
               <div class="menu">
@@ -39,12 +42,10 @@
                     category
                 </a>
 
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search courses" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
+                <input type="text" placeholder="Search courses">
+                <button type="button">
+                    <i class="fas fa-search"></i>
+                </button> 
             </div>
             
             <div class="colaboration">
@@ -118,9 +119,16 @@ header{
 
             .lang{
 
-                i{
-                    margin-left: 5px;
+                select#xyz {
+                    border:0px;
+                    outline:0px;
+                    color: lightgray;
                 }
+
+                select#xyz:hover {
+                    color: #457992;
+                }
+
             }
 
             nav {
@@ -172,29 +180,41 @@ header{
             .input{
                 display: flex;
                 align-items: center;
+                
 
                 a{
                     margin-right: 15px;
                     text-transform: uppercase;
                 }
 
-                .input-group{
-                    width: 400px;
-                    input{
-                        background-color: #f0f2f5;
-                        border-color: #f0f2f5;
-                    }
+                input{
+                    border: none;
+                    background: #f0f2f5;
+                    width: 350px;
+                    height: 35px;
+                }
 
-                    button{
-                        background-color: #457992;
-                        border-color: #457992;
-                        color:white;
-                    }
-                    
-                    ::placeholder{
-                        font-size: 14px;
-                        color: lightgray;
-                    }
+                ::placeholder{
+                    padding-left: 10px;
+                    font-size: 14px;
+                    color: lightgray;
+                }
+
+                input:focus {
+                    outline-color: lightgray;
+                }
+
+                button{ 
+                    border: none;
+                    outline: none;
+                    background-color: #457992;
+                    color: white;
+                    height: 35px;
+                    padding: 0 20px;
+                }
+
+                button:active{
+                    background-color: #233e4b;
                 }
             }
 

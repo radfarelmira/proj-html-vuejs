@@ -8,13 +8,12 @@
                 </div>
                 <div class="col col-right">
                     <h5>your e-mail address</h5>
-                    <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Enter your E-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                        Subscribe
-                    </button>
-
-                </div>
+                    <div class="input">
+                        <input type="text" placeholder="Enter your E-mail">
+                        <button type="button">
+                            Subscribe
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -51,17 +50,36 @@ section{
                     text-transform:uppercase;
                     font-size: 14px;
                 }
-                .input-group{
+                .input{
 
-                    .btn{
-                        background-color: #457992;
-                        border-color: #457992;
-                        color: white;
+                    input{
+                        border: none;
+                        background: #f0f2f5;
+                        width: 350px;
+                        height: 35px;
                     }
 
                     ::placeholder{
+                        padding-left: 10px;
                         font-size: 14px;
                         color: lightgray;
+                    }
+
+                    input:focus {
+                        outline-color: lightgray;
+                    }
+
+                    button{ 
+                        border: none;
+                        outline: none;
+                        background-color: #457992;
+                        color: white;
+                        height: 35px;
+                        padding: 0 20px;
+                    }
+
+                    button:active{
+                        background-color: #233e4b;
                     }
                 }
             }

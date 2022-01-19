@@ -12,11 +12,13 @@
                </ul>
             </nav> 
 
+            <!-- Cards -->
             <div class="row row-cols-1 row-cols-md-6 g-4">
                 <Card v-for="(cours, index) in recentCoursesArray" :key="index" :detailes="cours"/>
             </div>
 
             <a class="btn-general" href="#">show all</a>
+
             <!-- Side bar Icons -->
             <div class="side-bar-icons">
                 <ul>
@@ -103,6 +105,11 @@ section{
 
                 li{
                     margin: 5px 0;
+                    transition: transform .1s;
+                }
+
+                li:hover{
+                    transform: scale(1.1)
                 }
             }
         }
