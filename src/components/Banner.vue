@@ -24,6 +24,7 @@ export default {
 section{
     margin-top: 20px;
     color: white;
+    width: 100%;
     height: 300px;
     background-color: $primary_color;
     background-image: url(../assets/img/slide-1.jpg);

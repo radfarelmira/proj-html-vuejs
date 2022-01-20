@@ -8,7 +8,7 @@
                 </div>
                 <div class="col col-right">
                     <h5>your e-mail address</h5>
-                    <div class="input">
+                    <div class="input-content">
                         <input type="text" placeholder="Enter your E-mail">
                         <button type="button">
                             Subscribe
@@ -50,7 +50,7 @@ section{
                     text-transform:uppercase;
                     font-size: 14px;
                 }
-                .input{
+                .input-content{
 
                     input{
                         border: none;

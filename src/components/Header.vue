@@ -36,12 +36,12 @@
             <div class="logo">
                 <img src="../assets/img/MasterStudy.svg" alt="Master Study Logo">
             </div>
-            <div class="input">
+            <div class="input-content">
                 <a href="#">
                     <i class="fas fa-bars"></i>
                     category
                 </a>
-
+                
                 <input type="text" placeholder="Search courses">
                 <button type="button">
                     <i class="fas fa-search"></i>
@@ -106,6 +106,7 @@ export default {
 @import '../style/variables.scss';
 
 header{
+    width: 100%;
     font-size: 14px;
     .header-top{
         border-bottom: 1px solid lightgray;
@@ -176,11 +177,17 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
 
-            .input{
+            img{
+                min-width: 200px;
+            }
+
+            .input-content{
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
-                
+                flex-wrap: wrap;
 
                 a{
                     margin-right: 15px;
