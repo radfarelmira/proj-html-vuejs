@@ -1,14 +1,13 @@
 <template>
   <section>
-      <div class="sm-container">
-            <div class="banner-content">
-                <h2>Udemy Affiliaten Sales</h2>
-                <p>Monetize your audience and attract new customers with Udemy!</p>
+      <div class="banner-content">
+            <div class="sm-container">
+                <div class="banner-text">
+                    <h2>Udemy Affiliaten Sales</h2>
+                    <p>Monetize your audience and attract new customers with Udemy!</p>
+                </div>
             </div>
-            <div class="triangle">
-            </div>
-        </div>
-        
+        </div>   
   </section>
 </template>
 
@@ -24,37 +23,37 @@ export default {
 section{
     margin-top: 20px;
     color: white;
-    width: 100%;
     height: 300px;
     background-color: $primary_color;
     background-image: url(../assets/img/slide-1.jpg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
-    padding: 100px 0;
     position: relative;
 
-    .sm-container{
+    .banner-content{
+        border-bottom: 300px solid $primary_color;
+        border-left: 0px solid transparent;
+        border-right: 100px solid transparent;
+        height: 0;
+        width: 57%;
 
-        .banner-content{
-            width: 50%;
-            background-color: $primary_color;
+        .sm-container{
 
-            h2{
-                font-size: 40px;
-                font-weight: bold;
+            .banner-text{
+                padding: 50px 0 150px 50px;
+
+                h2{
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+                
+                p{
+                    font-size: 18px;
+                }
             }
         }
 
-        .triangle{
-            width: 0;
-            height: 0;
-            border-bottom: 300px solid $primary_color;
-            border-right: 150px solid transparent;
-            position: absolute;
-            left: 684.5px;
-            bottom: 0;
-        }
     }
 
     
