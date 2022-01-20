@@ -24,7 +24,6 @@ section{
     margin-top: 20px;
     color: white;
     height: 300px;
-    background-color: $primary_color;
     background-image: url(../assets/img/slide-1.jpg);
     background-repeat: no-repeat;
     background-position: right;
